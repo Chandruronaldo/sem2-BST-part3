@@ -285,7 +285,7 @@ int count(node *temp)
 }
 int main()
 {
-int a,n,k,achoice,bchoice,s,d,k1,k2;
+int a,n,k,achoice,bchoice,s,d,k1,k2,m;
 	cout<<"\nEnter the initial tree";
 	cout<<"\n enter the number of nodes";
             cin>>n;
@@ -311,7 +311,8 @@ int a,n,k,achoice,bchoice,s,d,k1,k2;
 				cin>>d;
 				deletenode(d);
 				break;
-			case 4: cout<<"\n The number of nodes in the BST is\t"<<cvar;
+			case 4:	m=count(root);
+				cout<<"\n The number of nodes in the BST is\t"<<cvar;
 				break;
 				
 			case 5: 
@@ -332,6 +333,7 @@ int a,n,k,achoice,bchoice,s,d,k1,k2;
 	}while(bchoice==1);
 	cout<<"\n\n The BST at the end of all operations is \n ";
 	a=display(root);
+	cout<<"*$*";
 	
 	
 	return 0;
